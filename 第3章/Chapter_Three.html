@@ -1,0 +1,863 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第3章 同化测试 · gitbook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../第2章/2.1. Maximum_likelihood.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../ABOUTME.html">
+            
+                <a href="../ABOUTME.html">
+            
+                    
+                    个人简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../ABOUTBLOG.html">
+            
+                <a href="../ABOUTBLOG.html">
+            
+                    
+                    关于博客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../第1章/Chapter_One.html">
+            
+                <a href="../第1章/Chapter_One.html">
+            
+                    
+                    第1章 走近资料同化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../第1章/1.1. 概述.html">
+            
+                <a href="../第1章/1.1. 概述.html">
+            
+                    
+                    1.1. 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../第1章/1.2. DA_history.html">
+            
+                <a href="../第1章/1.2. DA_history.html">
+            
+                    
+                    1.2. 变分同化发展历史
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../第2章/Chapter_Two.html">
+            
+                <a href="../第2章/Chapter_Two.html">
+            
+                    
+                    第2章 同化方法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../第2章/2.1. Maximum_likelihood.html">
+            
+                <a href="../第2章/2.1. Maximum_likelihood.html">
+            
+                    
+                    2.1. 最大似然
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="Chapter_Three.html">
+            
+                <a href="Chapter_Three.html">
+            
+                    
+                    第3章 同化测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第3章 同化测试</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#distributions"><b>1. </b>Distributions</a></li><ul><li><span class="title-icon "></span><a href="#bernoulli"><b>1.1. </b>Bernoulli</a></li><li><span class="title-icon "></span><a href="#discrete-uniform"><b>1.2. </b>Discrete Uniform</a></li><li><span class="title-icon "></span><a href="#continuous-uniform"><b>1.3. </b>Continuous Uniform</a></li><li><span class="title-icon "></span><a href="#binomial"><b>1.4. </b>Binomial</a></li><li><span class="title-icon "></span><a href="#poisson"><b>1.5. </b>Poisson</a></li><li><span class="title-icon "></span><a href="#gaussian"><b>1.6. </b>Gaussian</a></li><li><span class="title-icon "></span><a href="#exponential-family"><b>1.7. </b>Exponential Family</a></li><li><span class="title-icon "></span><a href="#summary"><b>1.8. </b>Summary</a></li><li><span class="title-icon "></span><a href="#exercises"><b>1.9. </b>Exercises</a></li></ul></ul></div><a href="#distributions" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="distributions"><a name="distributions" class="anchor-navigation-ex-anchor" href="#distributions"><i class="fa fa-link" aria-hidden="true"></i></a>1. Distributions</h1>
+<p>:label:<code>sec_distributions</code></p>
+<p>Now that we have learned how to work with probability in both the discrete and the continuous setting, let us get to know some of the common distributions encountered.  Depending on the area of machine learning, we may need to be familiar with vastly more of these, or for some areas of deep learning potentially none at all.  This is, however, a good basic list to be familiar with.  Let us first import some common libraries.</p>
+<pre><code class="lang-python">%matplotlib inline
+<span class="hljs-keyword">from</span> d2l <span class="hljs-keyword">import</span> tensorflow <span class="hljs-keyword">as</span> d2l
+<span class="hljs-keyword">from</span> IPython <span class="hljs-keyword">import</span> display
+<span class="hljs-keyword">from</span> math <span class="hljs-keyword">import</span> erf, factorial
+<span class="hljs-keyword">import</span> tensorflow <span class="hljs-keyword">as</span> tf
+<span class="hljs-keyword">import</span> tensorflow_probability <span class="hljs-keyword">as</span> tfp
+
+tf.pi = tf.acos(tf.zeros(<span class="hljs-number">1</span>)) * <span class="hljs-number">2</span>  <span class="hljs-comment"># Define pi in TensorFlow</span>
+</code></pre>
+<h2 id="bernoulli"><a name="bernoulli" class="anchor-navigation-ex-anchor" href="#bernoulli"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Bernoulli</h2>
+<p>This is the simplest random variable usually encountered.  This random variable encodes a coin flip which comes up <script type="math/tex; ">1</script> with probability <script type="math/tex; ">p</script> and <script type="math/tex; ">0</script> with probability <script type="math/tex; ">1-p</script>.  If we have a random variable <script type="math/tex; ">X</script> with this distribution, we will write</p>
+<p><script type="math/tex; mode=display">
+X \sim \mathrm{Bernoulli}(p).
+</script></p>
+<p>The cumulative distribution function is </p>
+<p><script type="math/tex; ">F(x) = \begin{cases} 0 & x < 0, \\ 1-p & 0 \le x < 1, \\ 1 & x >= 1 . \end{cases}</script></p>
+<p>:eqlabel:<code>eq_bernoulli_cdf</code></p>
+<p>The probability mass function is plotted below.</p>
+<pre><code class="lang-python">p = <span class="hljs-number">0.3</span>
+
+d2l.set_figsize()
+d2l.plt.stem([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>], [<span class="hljs-number">1</span> - p, p], use_line_collection=<span class="hljs-keyword">True</span>)
+d2l.plt.xlabel(<span class="hljs-string">&apos;x&apos;</span>)
+d2l.plt.ylabel(<span class="hljs-string">&apos;p.m.f.&apos;</span>)
+d2l.plt.show()
+</code></pre>
+<p><img src="output_3_0.svg" alt="svg"></p>
+<p>Now, let us plot the cumulative distribution function :eqref:<code>eq_bernoulli_cdf</code>.</p>
+<pre><code class="lang-python">x = tf.range(<span class="hljs-number">-1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">0.01</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">F</span><span class="hljs-params">(x)</span>:</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span> <span class="hljs-keyword">if</span> x &lt; <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> <span class="hljs-number">1</span> <span class="hljs-keyword">if</span> x &gt; <span class="hljs-number">1</span> <span class="hljs-keyword">else</span> <span class="hljs-number">1</span> - p
+
+d2l.plot(x, tf.constant([F(y) <span class="hljs-keyword">for</span> y <span class="hljs-keyword">in</span> x]), <span class="hljs-string">&apos;x&apos;</span>, <span class="hljs-string">&apos;c.d.f.&apos;</span>)
+</code></pre>
+<p><img src="output_5_0.svg" alt="svg"></p>
+<p>If <script type="math/tex; ">X \sim \mathrm{Bernoulli}(p)</script>, then:</p>
+<ul>
+<li><script type="math/tex; ">\mu_X = p</script>,</li>
+<li><script type="math/tex; ">\sigma_X^2 = p(1-p)</script>.</li>
+</ul>
+<p>We can sample an array of arbitrary shape from a Bernoulli random variable as follows.</p>
+<pre><code class="lang-python">tf.cast(tf.random.uniform((<span class="hljs-number">10</span>, <span class="hljs-number">10</span>)) &lt; p, dtype=tf.float32)
+</code></pre>
+<pre><code>&lt;tf.Tensor: shape=(10, 10), dtype=float32, numpy=
+array([[0., 0., 1., 1., 1., 1., 0., 0., 0., 0.],
+       [0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+       [0., 0., 0., 1., 0., 0., 1., 1., 0., 1.],
+       [1., 1., 1., 0., 1., 0., 1., 1., 0., 0.],
+       [0., 0., 0., 1., 0., 0., 1., 1., 0., 0.],
+       [0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+       [1., 0., 1., 0., 0., 0., 1., 0., 0., 1.],
+       [0., 1., 1., 1., 0., 0., 1., 1., 1., 0.],
+       [1., 1., 0., 0., 0., 0., 0., 0., 1., 0.],
+       [0., 0., 0., 0., 0., 0., 0., 0., 1., 0.]], dtype=float32)&gt;
+</code></pre><h2 id="discrete-uniform"><a name="discrete-uniform" class="anchor-navigation-ex-anchor" href="#discrete-uniform"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Discrete Uniform</h2>
+<p>The next commonly encountered random variable is a discrete uniform.  For our discussion here, we will assume that it is supported on the integers <script type="math/tex; ">\{1, 2, \ldots, n\}</script>, however any other set of values can be freely chosen.  The meaning of the word <em>uniform</em> in this context is that every possible value is equally likely.  The probability for each value <script type="math/tex; ">i \in \{1, 2, 3, \ldots, n\}</script> is <script type="math/tex; ">p_i = \frac{1}{n}</script>.  We will denote a random variable <script type="math/tex; ">X</script> with this distribution as</p>
+<p><script type="math/tex; mode=display">
+X \sim U(n).
+</script></p>
+<p>The cumulative distribution function is </p>
+<p><script type="math/tex; ">F(x) = \begin{cases} 0 & x < 1, \\ \frac{k}{n} & k \le x < k+1 \text{ with } 1 \le k < n, \\ 1 & x >= n . \end{cases}</script>
+:eqlabel:<code>eq_discrete_uniform_cdf</code></p>
+<p>Let us first plot the probability mass function.</p>
+<pre><code class="lang-python">n = <span class="hljs-number">5</span>
+
+d2l.plt.stem([i+<span class="hljs-number">1</span> <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(n)], n*[<span class="hljs-number">1</span> / n], use_line_collection=<span class="hljs-keyword">True</span>)
+d2l.plt.xlabel(<span class="hljs-string">&apos;x&apos;</span>)
+d2l.plt.ylabel(<span class="hljs-string">&apos;p.m.f.&apos;</span>)
+d2l.plt.show()
+</code></pre>
+<p><img src="output_9_0.svg" alt="svg"></p>
+<p>Now, let us plot the cumulative distribution function :eqref:<code>eq_discrete_uniform_cdf</code>.</p>
+<pre><code class="lang-python">x = tf.range(<span class="hljs-number">-1</span>, <span class="hljs-number">6</span>, <span class="hljs-number">0.01</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">F</span><span class="hljs-params">(x)</span>:</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span> <span class="hljs-keyword">if</span> x &lt; <span class="hljs-number">1</span> <span class="hljs-keyword">else</span> <span class="hljs-number">1</span> <span class="hljs-keyword">if</span> x &gt; n <span class="hljs-keyword">else</span> tf.floor(x) / n
+
+d2l.plot(x, [F(y) <span class="hljs-keyword">for</span> y <span class="hljs-keyword">in</span> x], <span class="hljs-string">&apos;x&apos;</span>, <span class="hljs-string">&apos;c.d.f.&apos;</span>)
+</code></pre>
+<p><img src="output_11_0.svg" alt="svg"></p>
+<p>If <script type="math/tex; ">X \sim U(n)</script>, then:</p>
+<ul>
+<li><script type="math/tex; ">\mu_X = \frac{1+n}{2}</script>,</li>
+<li><script type="math/tex; ">\sigma_X^2 = \frac{n^2-1}{12}</script>.</li>
+</ul>
+<p>We can sample an array of arbitrary shape from a discrete uniform random variable as follows.</p>
+<pre><code class="lang-python">tf.random.uniform((<span class="hljs-number">10</span>, <span class="hljs-number">10</span>), <span class="hljs-number">1</span>, n, dtype=tf.int32)
+</code></pre>
+<pre><code>&lt;tf.Tensor: shape=(10, 10), dtype=int32, numpy=
+array([[1, 3, 1, 2, 3, 2, 4, 4, 1, 3],
+       [4, 1, 1, 2, 1, 4, 1, 2, 3, 3],
+       [1, 1, 1, 3, 4, 1, 1, 3, 4, 4],
+       [1, 2, 3, 4, 1, 1, 3, 4, 3, 2],
+       [3, 4, 4, 4, 2, 3, 4, 3, 1, 4],
+       [3, 2, 2, 4, 3, 2, 3, 1, 2, 2],
+       [2, 1, 2, 3, 3, 1, 4, 2, 3, 3],
+       [4, 2, 3, 3, 2, 2, 3, 1, 1, 4],
+       [4, 3, 3, 3, 2, 4, 1, 1, 2, 3],
+       [4, 3, 4, 4, 4, 1, 1, 3, 4, 1]], dtype=int32)&gt;
+</code></pre><h2 id="continuous-uniform"><a name="continuous-uniform" class="anchor-navigation-ex-anchor" href="#continuous-uniform"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Continuous Uniform</h2>
+<p>Next, let us discuss the continuous uniform distribution. The idea behind this random variable is that if we increase the $n$ in the discrete uniform distribution, and then scale it to fit within the interval $[a, b]$, we will approach a continuous random variable that just picks an arbitrary value in $[a, b]$ all with equal probability.  We will denote this distribution as</p>
+<p><script type="math/tex; mode=display">
+X \sim U(a, b).
+</script></p>
+<p>The probability density function is </p>
+<p><script type="math/tex; ">p(x) = \begin{cases} \frac{1}{b-a} & x \in [a, b], \\ 0 & x \not\in [a, b].\end{cases}</script>
+:eqlabel:<code>eq_cont_uniform_pdf</code></p>
+<p>The cumulative distribution function is </p>
+<p><script type="math/tex; ">F(x) = \begin{cases} 0 & x < a, \\ \frac{x-a}{b-a} & x \in [a, b], \\ 1 & x >= b . \end{cases}</script>
+:eqlabel:<code>eq_cont_uniform_cdf</code></p>
+<p>Let us first plot the probability density function :eqref:<code>eq_cont_uniform_pdf</code>.</p>
+<pre><code class="lang-python">a, b = <span class="hljs-number">1</span>, <span class="hljs-number">3</span>
+
+x = tf.range(<span class="hljs-number">0</span>, <span class="hljs-number">4</span>, <span class="hljs-number">0.01</span>)
+p = tf.cast(x &gt; a, tf.float32) * tf.cast(x &lt; b, tf.float32) / (b - a)
+d2l.plot(x, p, <span class="hljs-string">&apos;x&apos;</span>, <span class="hljs-string">&apos;p.d.f.&apos;</span>)
+</code></pre>
+<p><img src="output_15_0.svg" alt="svg"></p>
+<p>Now, let us plot the cumulative distribution function :eqref:<code>eq_cont_uniform_cdf</code>.</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">F</span><span class="hljs-params">(x)</span>:</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span> <span class="hljs-keyword">if</span> x &lt; a <span class="hljs-keyword">else</span> <span class="hljs-number">1</span> <span class="hljs-keyword">if</span> x &gt; b <span class="hljs-keyword">else</span> (x - a) / (b - a)
+
+d2l.plot(x, [F(y) <span class="hljs-keyword">for</span> y <span class="hljs-keyword">in</span> x], <span class="hljs-string">&apos;x&apos;</span>, <span class="hljs-string">&apos;c.d.f.&apos;</span>)
+</code></pre>
+<p><img src="output_17_0.svg" alt="svg"></p>
+<p>If <script type="math/tex; ">X \sim U(a, b)</script>, then:</p>
+<ul>
+<li><script type="math/tex; ">\mu_X = \frac{a+b}{2}</script>,</li>
+<li><script type="math/tex; ">\sigma_X^2 = \frac{(b-a)^2}{12}</script>.</li>
+</ul>
+<p>We can sample an array of arbitrary shape from a uniform random variable as follows.  Note that it by default samples from a <script type="math/tex; ">U(0,1)</script>, so if we want a different range we need to scale it.</p>
+<pre><code class="lang-python">(b - a) * tf.random.uniform((<span class="hljs-number">10</span>, <span class="hljs-number">10</span>)) + a
+</code></pre>
+<pre><code>&lt;tf.Tensor: shape=(10, 10), dtype=float32, numpy=
+array([[1.7804263, 1.9575768, 2.8556268, 1.5272667, 2.2623029, 2.4736269,
+        2.3054109, 2.1515605, 1.4523714, 1.4208646],
+       [2.833194 , 2.0781431, 2.60242  , 1.4918704, 2.6552544, 2.0655806,
+        1.1521587, 2.8872216, 1.1531181, 2.0522888],
+       [1.9216418, 2.0718668, 1.9521947, 2.3949857, 1.1058526, 2.5982137,
+        1.6985137, 2.0426784, 2.2847528, 2.0589879],
+       [2.40885  , 2.2493238, 2.458789 , 1.2521269, 2.9635918, 2.8878062,
+        2.4774656, 1.9006674, 1.2686608, 2.221036 ],
+       [2.3578174, 2.1733658, 1.602514 , 1.0951548, 2.7814884, 1.2816045,
+        1.7502289, 1.3335652, 2.36617  , 2.7233436],
+       [2.7226715, 2.4292326, 2.1165085, 1.7317848, 1.2517986, 1.2491622,
+        1.7821674, 2.9364302, 2.519434 , 2.6517425],
+       [2.6817741, 2.9088082, 2.1092224, 2.7444878, 1.2767091, 2.6994114,
+        2.1259346, 2.288973 , 2.2273924, 2.7161863],
+       [2.5298615, 2.850503 , 1.7568376, 1.9299285, 2.320703 , 1.3114367,
+        2.4912307, 2.1492171, 2.0641012, 1.7790077],
+       [2.5798607, 2.7002077, 2.0566623, 1.1826713, 2.448424 , 2.404228 ,
+        1.4800057, 1.179117 , 1.1807704, 2.5908656],
+       [2.7273421, 2.9443276, 1.1070018, 2.3177438, 1.2451029, 1.3369176,
+        1.991437 , 2.2756877, 2.8974433, 1.0665584]], dtype=float32)&gt;
+</code></pre><h2 id="binomial"><a name="binomial" class="anchor-navigation-ex-anchor" href="#binomial"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. Binomial</h2>
+<p>Let us make things a little more complex and examine the <em>binomial</em> random variable.  This random variable originates from performing a sequence of $n$ independent experiments, each of which has probability $p$ of succeeding, and asking how many successes we expect to see.</p>
+<p>Let us express this mathematically.  Each experiment is an independent random variable $X_i$ where we will use $1$ to encode success, and $0$ to encode failure.  Since each is an independent coin flip which is successful with probability $p$, we can say that <script type="math/tex; ">X_i \sim \mathrm{Bernoulli}(p)</script>.  Then, the binomial random variable is</p>
+<p><script type="math/tex; mode=display">
+X = \sum_{i=1}^n X_i.
+</script></p>
+<p>In this case, we will write</p>
+<p><script type="math/tex; mode=display">
+X \sim \mathrm{Binomial}(n, p).
+</script></p>
+<p>To get the cumulative distribution function, we need to notice that getting exactly $k$ successes can occur in <script type="math/tex; ">\binom{n}{k} = \frac{n!}{k!(n-k)!}</script> ways each of which has a probability of <script type="math/tex; ">p^k(1-p)^{n-k}</script> of occurring.  Thus the cumulative distribution function is</p>
+<p><script type="math/tex; ">F(x) = \begin{cases} 0 & x < 0, \\ \sum_{m \le k} \binom{n}{m} p^m(1-p)^{n-m}  & k \le x < k+1 \text{ with } 0 \le k < n, \\ 1 & x >= n . \end{cases}</script>
+:eqlabel:<code>eq_binomial_cdf</code></p>
+<p>Let us first plot the probability mass function.</p>
+<pre><code class="lang-python">n, p = <span class="hljs-number">10</span>, <span class="hljs-number">0.2</span>
+
+<span class="hljs-comment"># Compute binomial coefficient</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">binom</span><span class="hljs-params">(n, k)</span>:</span>
+    comb = <span class="hljs-number">1</span>
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(min(k, n - k)):
+        comb = comb * (n - i) // (i + <span class="hljs-number">1</span>)
+    <span class="hljs-keyword">return</span> comb
+
+pmf = tf.constant([p**i * (<span class="hljs-number">1</span>-p)**(n - i) * binom(n, i) <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(n + <span class="hljs-number">1</span>)])
+
+d2l.plt.stem([i <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(n + <span class="hljs-number">1</span>)], pmf, use_line_collection=<span class="hljs-keyword">True</span>)
+d2l.plt.xlabel(<span class="hljs-string">&apos;x&apos;</span>)
+d2l.plt.ylabel(<span class="hljs-string">&apos;p.m.f.&apos;</span>)
+d2l.plt.show()
+</code></pre>
+<p><img src="output_21_0.svg" alt="svg"></p>
+<p>Now, let us plot the cumulative distribution function :eqref:<code>eq_binomial_cdf</code>.</p>
+<pre><code class="lang-python">x = tf.range(<span class="hljs-number">-1</span>, <span class="hljs-number">11</span>, <span class="hljs-number">0.01</span>)
+cmf = tf.cumsum(pmf)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">F</span><span class="hljs-params">(x)</span>:</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span> <span class="hljs-keyword">if</span> x &lt; <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> <span class="hljs-number">1</span> <span class="hljs-keyword">if</span> x &gt; n <span class="hljs-keyword">else</span> cmf[int(x)]
+
+d2l.plot(x, [F(y) <span class="hljs-keyword">for</span> y <span class="hljs-keyword">in</span> x.numpy().tolist()], <span class="hljs-string">&apos;x&apos;</span>, <span class="hljs-string">&apos;c.d.f.&apos;</span>)
+</code></pre>
+<p><img src="output_23_0.svg" alt="svg"></p>
+<p>While this result is not simple, the means and variances are.  If <script type="math/tex; ">X \sim \mathrm{Binomial}(n, p)</script>, then:</p>
+<ul>
+<li><script type="math/tex; ">\mu_X = np</script>,</li>
+<li><script type="math/tex; ">\sigma_X^2 = np(1-p)</script>.</li>
+</ul>
+<p>This can be sampled as follows.</p>
+<pre><code class="lang-python">m = tfp.distributions.Binomial(n, p)
+m.sample(sample_shape=(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>))
+</code></pre>
+<pre><code>&lt;tf.Tensor: shape=(10, 10), dtype=float32, numpy=
+array([[6., 7., 7., 5., 6., 4., 6., 6., 4., 6.],
+       [5., 5., 6., 7., 6., 5., 3., 2., 8., 6.],
+       [3., 7., 6., 4., 4., 3., 6., 4., 8., 7.],
+       [5., 8., 4., 4., 5., 5., 5., 6., 5., 6.],
+       [7., 5., 5., 5., 7., 5., 7., 5., 7., 3.],
+       [3., 6., 5., 3., 5., 7., 5., 6., 4., 7.],
+       [6., 4., 5., 2., 8., 4., 5., 4., 3., 3.],
+       [5., 8., 7., 6., 9., 8., 6., 5., 3., 2.],
+       [6., 4., 3., 6., 5., 7., 3., 7., 5., 2.],
+       [5., 5., 7., 5., 5., 5., 7., 8., 6., 5.]], dtype=float32)&gt;
+</code></pre><h2 id="poisson"><a name="poisson" class="anchor-navigation-ex-anchor" href="#poisson"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. Poisson</h2>
+<p>Let us now perform a thought experiment.  We are standing at a bus stop and we want to know how many buses will arrive in the next minute.  Let us start by considering <script type="math/tex; ">X^{(1)} \sim \mathrm{Bernoulli}(p)</script> which is simply the probability that a bus arrives in the one minute window.  For bus stops far from an urban center, this might be a pretty good approximation.  We may never see more than one bus in a minute.</p>
+<p>However, if we are in a busy area, it is possible or even likely that two buses will arrive.  We can model this by splitting our random variable into two parts for the first 30 seconds, or the second 30 seconds.  In this case we can write</p>
+<p><script type="math/tex; mode=display">
+X^{(2)} \sim X^{(2)}_1 + X^{(2)}_2,
+</script></p>
+<p>where <script type="math/tex; ">X^{(2)}</script> is the total sum, and <script type="math/tex; ">X^{(2)}_i \sim \mathrm{Bernoulli}(p/2)</script>.  The total distribution is then <script type="math/tex; ">X^{(2)} \sim \mathrm{Binomial}(2, p/2)</script>.</p>
+<p>Why stop here?  Let us continue to split that minute into <script type="math/tex; ">n</script> parts.  By the same reasoning as above, we see that</p>
+<p><script type="math/tex; ">X^{(n)} \sim \mathrm{Binomial}(n, p/n).</script>
+:eqlabel:<code>eq_eq_poisson_approx</code></p>
+<p>Consider these random variables.  By the previous section, we know that :eqref:<code>eq_eq_poisson_approx</code> has mean <script type="math/tex; ">\mu_{X^{(n)}} = n(p/n) = p</script>, and variance <script type="math/tex; ">\sigma_{X^{(n)}}^2 = n(p/n)(1-(p/n)) = p(1-p/n)</script>.  If we take <script type="math/tex; ">n \rightarrow \infty</script>, we can see that these numbers stabilize to <script type="math/tex; ">\mu_{X^{(\infty)}} = p</script>, and variance <script type="math/tex; ">\sigma_{X^{(\infty)}}^2 = p</script>.  This indicates that there <em>could be</em> some random variable we can define in this infinite subdivision limit.  </p>
+<p>This should not come as too much of a surprise, since in the real world we can just count the number of bus arrivals, however it is nice to see that our mathematical model is well defined.  This discussion can be made formal as the <em>law of rare events</em>.</p>
+<p>Following through this reasoning carefully, we can arrive at the following model.  We will say that <script type="math/tex; ">X \sim \mathrm{Poisson}(\lambda)</script> if it is a random variable which takes the values <script type="math/tex; ">\{0,1,2, \ldots\}</script> with probability</p>
+<p><script type="math/tex; ">p_k = \frac{\lambda^ke^{-\lambda}}{k!}.</script>
+:eqlabel:<code>eq_poisson_mass</code></p>
+<p>The value <script type="math/tex; ">\lambda > 0</script> is known as the <em>rate</em> (or the <em>shape</em> parameter), and denotes the average number of arrivals we expect in one unit of time.  </p>
+<p>We may sum this probability mass function to get the cumulative distribution function.</p>
+<p><script type="math/tex; ">F(x) = \begin{cases} 0 & x < 0, \\ e^{-\lambda}\sum_{m = 0}^k \frac{\lambda^m}{m!} & k \le x < k+1 \text{ with } 0 \le k. \end{cases}</script>
+:eqlabel:<code>eq_poisson_cdf</code></p>
+<p>Let us first plot the probability mass function :eqref:<code>eq_poisson_mass</code>.</p>
+<pre><code class="lang-python">lam = <span class="hljs-number">5.0</span>
+
+xs = [i <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">20</span>)]
+pmf = tf.constant([tf.exp(tf.constant(-lam)).numpy() * lam**k
+                    / factorial(k) <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> xs])
+
+d2l.plt.stem(xs, pmf, use_line_collection=<span class="hljs-keyword">True</span>)
+d2l.plt.xlabel(<span class="hljs-string">&apos;x&apos;</span>)
+d2l.plt.ylabel(<span class="hljs-string">&apos;p.m.f.&apos;</span>)
+d2l.plt.show()
+</code></pre>
+<p><img src="output_27_0.svg" alt="svg"></p>
+<p>Now, let us plot the cumulative distribution function :eqref:<code>eq_poisson_cdf</code>.</p>
+<pre><code class="lang-python">x = tf.range(<span class="hljs-number">-1</span>, <span class="hljs-number">21</span>, <span class="hljs-number">0.01</span>)
+cmf = tf.cumsum(pmf)
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">F</span><span class="hljs-params">(x)</span>:</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span> <span class="hljs-keyword">if</span> x &lt; <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> <span class="hljs-number">1</span> <span class="hljs-keyword">if</span> x &gt; n <span class="hljs-keyword">else</span> cmf[int(x)]
+
+d2l.plot(x, [F(y) <span class="hljs-keyword">for</span> y <span class="hljs-keyword">in</span> x.numpy().tolist()], <span class="hljs-string">&apos;x&apos;</span>, <span class="hljs-string">&apos;c.d.f.&apos;</span>)
+</code></pre>
+<p><img src="output_29_0.svg" alt="svg"></p>
+<p>As we saw above, the means and variances are particularly concise.  If <script type="math/tex; ">X \sim \mathrm{Poisson}(\lambda)</script>, then:</p>
+<ul>
+<li><script type="math/tex; ">\mu_X = \lambda</script>,</li>
+<li><script type="math/tex; ">\sigma_X^2 = \lambda</script>.</li>
+</ul>
+<p>This can be sampled as follows.</p>
+<pre><code class="lang-python">m = tfp.distributions.Poisson(lam)
+m.sample((<span class="hljs-number">10</span>, <span class="hljs-number">10</span>))
+</code></pre>
+<pre><code>&lt;tf.Tensor: shape=(10, 10), dtype=float32, numpy=
+array([[ 3.,  5.,  7.,  3.,  4.,  6.,  7.,  4.,  3.,  1.],
+       [ 8.,  5.,  6.,  5.,  3.,  3.,  3.,  5.,  6.,  7.],
+       [ 6.,  2.,  7.,  5.,  1., 10.,  2.,  9.,  4.,  2.],
+       [ 6.,  7.,  5.,  8.,  4.,  3.,  5.,  9.,  0.,  2.],
+       [ 6.,  7.,  8.,  2.,  4.,  7.,  7.,  5.,  1.,  5.],
+       [ 4.,  7.,  4.,  2.,  6.,  6.,  5.,  6.,  1.,  6.],
+       [ 4.,  7.,  8.,  5.,  4.,  2., 10.,  2.,  4.,  5.],
+       [ 7.,  6.,  3.,  5.,  7.,  7.,  4., 11.,  6.,  5.],
+       [ 5.,  8.,  9.,  6.,  5., 11.,  4.,  1.,  6.,  7.],
+       [ 3.,  0.,  4., 11.,  3.,  2.,  7.,  7.,  6.,  5.]], dtype=float32)&gt;
+</code></pre><h2 id="gaussian"><a name="gaussian" class="anchor-navigation-ex-anchor" href="#gaussian"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. Gaussian</h2>
+<p>Now Let us try a different, but related experiment.  Let us say we again are performing $n$ independent <script type="math/tex; ">\mathrm{Bernoulli}(p)</script> measurements <script type="math/tex; ">X_i</script>.  The distribution of the sum of these is <script type="math/tex; ">X^{(n)} \sim \mathrm{Binomial}(n, p)</script>.  Rather than taking a limit as $n$ increases and $p$ decreases, Let us fix $p$, and then send <script type="math/tex; ">n \rightarrow \infty</script>.  In this case <script type="math/tex; ">\mu_{X^{(n)}} = np \rightarrow \infty</script> and <script type="math/tex; ">\sigma_{X^{(n)}}^2 = np(1-p) \rightarrow \infty</script>, so there is no reason to think this limit should be well defined.</p>
+<p>However, not all hope is lost!  Let us just make the mean and variance be well behaved by defining</p>
+<p><script type="math/tex; mode=display">
+Y^{(n)} = \frac{X^{(n)} - \mu_{X^{(n)}}}{\sigma_{X^{(n)}}}.
+</script></p>
+<p>This can be seen to have mean zero and variance one, and so it is plausible to believe that it will converge to some limiting distribution.  If we plot what these distributions look like, we will become even more convinced that it will work.</p>
+<pre><code class="lang-python">p = <span class="hljs-number">0.2</span>
+ns = [<span class="hljs-number">1</span>, <span class="hljs-number">10</span>, <span class="hljs-number">100</span>, <span class="hljs-number">1000</span>]
+d2l.plt.figure(figsize=(<span class="hljs-number">10</span>, <span class="hljs-number">3</span>))
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">4</span>):
+    n = ns[i]
+    pmf = tf.constant([p**i * (<span class="hljs-number">1</span>-p)**(n-i) * binom(n, i)
+                        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(n + <span class="hljs-number">1</span>)])
+    d2l.plt.subplot(<span class="hljs-number">1</span>, <span class="hljs-number">4</span>, i + <span class="hljs-number">1</span>)
+    d2l.plt.stem([(i - n*p)/tf.sqrt(tf.constant(n*p*(<span class="hljs-number">1</span> - p)))
+                  <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(n + <span class="hljs-number">1</span>)], pmf,
+                 use_line_collection=<span class="hljs-keyword">True</span>)
+    d2l.plt.xlim([<span class="hljs-number">-4</span>, <span class="hljs-number">4</span>])
+    d2l.plt.xlabel(<span class="hljs-string">&apos;x&apos;</span>)
+    d2l.plt.ylabel(<span class="hljs-string">&apos;p.m.f.&apos;</span>)
+    d2l.plt.title(<span class="hljs-string">&quot;n = {}&quot;</span>.format(n))
+d2l.plt.show()
+</code></pre>
+<p><img src="output_33_0.svg" alt="svg"></p>
+<p>One thing to note: compared to the Poisson case, we are now dividing by the standard deviation which means that we are squeezing the possible outcomes into smaller and smaller areas.  This is an indication that our limit will no longer be discrete, but rather a continuous.</p>
+<p>A derivation of what occurs is beyond the scope of this document, but the <em>central limit theorem</em> states that as <script type="math/tex; ">n \rightarrow \infty</script>, this will yield the Gaussian Distribution (or sometimes normal distribution).  More explicitly, for any <script type="math/tex; ">a, b</script>:</p>
+<p><script type="math/tex; mode=display">
+\lim_{n \rightarrow \infty} P(Y^{(n)} \in [a, b]) = P(\mathcal{N}(0,1) \in [a, b]),
+</script></p>
+<p>where we say a random variable is normally distributed with given mean <script type="math/tex; ">\mu</script> and variance <script type="math/tex; ">\sigma^2</script>, written <script type="math/tex; ">X \sim \mathcal{N}(\mu, \sigma^2)</script> if <script type="math/tex; ">X</script> has density</p>
+<p><script type="math/tex; ">p_X(x) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}.</script>
+:eqlabel:<code>eq_gaussian_pdf</code></p>
+<p>Let us first plot the probability density function :eqref:<code>eq_gaussian_pdf</code>.</p>
+<pre><code class="lang-python">mu, sigma = <span class="hljs-number">0</span>, <span class="hljs-number">1</span>
+
+x = tf.range(<span class="hljs-number">-3</span>, <span class="hljs-number">3</span>, <span class="hljs-number">0.01</span>)
+p = <span class="hljs-number">1</span> / tf.sqrt(<span class="hljs-number">2</span> * tf.pi * sigma**<span class="hljs-number">2</span>) * tf.exp(
+    -(x - mu)**<span class="hljs-number">2</span> / (<span class="hljs-number">2</span> * sigma**<span class="hljs-number">2</span>))
+
+d2l.plot(x, p, <span class="hljs-string">&apos;x&apos;</span>, <span class="hljs-string">&apos;p.d.f.&apos;</span>)
+</code></pre>
+<p><img src="output_35_0.svg" alt="svg"></p>
+<p>Now, let us plot the cumulative distribution function.  It is beyond the scope of this appendix, but the Gaussian c.d.f. does not have a closed-form formula in terms of more elementary functions.  We will use <code>erf</code> which provides a way to compute this integral numerically.</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">phi</span><span class="hljs-params">(x)</span>:</span>
+    <span class="hljs-keyword">return</span> (<span class="hljs-number">1.0</span> + erf((x - mu) / (sigma * tf.sqrt(tf.constant(<span class="hljs-number">2.</span>))))) / <span class="hljs-number">2.0</span>
+
+d2l.plot(x, [phi(y) <span class="hljs-keyword">for</span> y <span class="hljs-keyword">in</span> x.numpy().tolist()], <span class="hljs-string">&apos;x&apos;</span>, <span class="hljs-string">&apos;c.d.f.&apos;</span>)
+</code></pre>
+<p><img src="output_37_0.svg" alt="svg"></p>
+<p>Keen-eyed readers will recognize some of these terms.  Indeed, we encountered this integral in :numref:<code>sec_integral_calculus</code>.  Indeed we need exactly that computation to see that this <script type="math/tex; ">p_X(x)</script> has total area one and is thus a valid density.</p>
+<p>Our choice of working with coin flips made computations shorter, but nothing about that choice was fundamental.  Indeed, if we take any collection of independent identically distributed random variables <script type="math/tex; ">X_i</script>, and form</p>
+<p><script type="math/tex; mode=display">
+X^{(N)} = \sum_{i=1}^N X_i.
+</script></p>
+<p>Then</p>
+<p><script type="math/tex; mode=display">
+\frac{X^{(N)} - \mu_{X^{(N)}}}{\sigma_{X^{(N)}}}
+</script></p>
+<p>will be approximately Gaussian.  There are additional requirements needed to make it work, most commonly <script type="math/tex; ">E[X^4] < \infty</script>, but the philosophy is clear.</p>
+<p>The central limit theorem is the reason that the Gaussian is fundamental to probability, statistics, and machine learning.  Whenever we can say that something we measured is a sum of many small independent contributions, we can assume that the thing being measured will be close to Gaussian.  </p>
+<p>There are many more fascinating properties of Gaussians, and we would like to discuss one more here.  The Gaussian is what is known as a <em>maximum entropy distribution</em>.  We will get into entropy more deeply in :numref:<code>sec_information_theory</code>, however all we need to know at this point is that it is a measure of randomness.  In a rigorous mathematical sense, we can think of the Gaussian as the <em>most</em> random choice of random variable with fixed mean and variance.  Thus, if we know that our random variable has some mean and variance, the Gaussian is in a sense the most conservative choice of distribution we can make.</p>
+<p>To close the section, Let us recall that if <script type="math/tex; ">X \sim \mathcal{N}(\mu, \sigma^2)</script>, then:</p>
+<ul>
+<li><script type="math/tex; ">\mu_X = \mu</script>,</li>
+<li><script type="math/tex; ">\sigma_X^2 = \sigma^2</script>.</li>
+</ul>
+<p>We can sample from the Gaussian (or standard normal) distribution as shown below.</p>
+<pre><code class="lang-python">tf.random.normal((<span class="hljs-number">10</span>, <span class="hljs-number">10</span>), mu, sigma)
+</code></pre>
+<pre><code>&lt;tf.Tensor: shape=(10, 10), dtype=float32, numpy=
+array([[-2.12261200e-01, -5.68649828e-01, -1.26072299e+00,
+        -1.24416864e+00, -9.42809701e-01,  9.90718380e-02,
+        -7.70419121e-01,  1.39457452e+00, -2.20204249e-01,
+        -1.76776445e+00],
+       [ 1.47603178e+00, -7.35783279e-01,  7.21418560e-01,
+        -2.36023426e+00, -6.89089715e-01,  9.28479791e-01,
+        -4.45085466e-01,  1.11548439e-01,  1.00284421e+00,
+         1.06167889e+00],
+       [ 1.04041135e+00,  1.83527160e+00, -3.08340132e-01,
+         1.21977282e+00,  1.52224159e+00, -3.54018956e-01,
+         9.25775319e-02, -7.54688978e-01,  5.47531486e-01,
+        -1.74352452e-01],
+       [ 1.67228591e+00,  1.13807309e+00, -8.06655526e-01,
+         9.50587630e-01, -1.08356044e-01, -2.02788591e-01,
+        -7.90045023e-01, -1.57629681e+00, -1.40551403e-01,
+         1.34345996e+00],
+       [ 5.40504098e-01, -1.03888631e+00,  1.24036157e+00,
+         9.16105747e-01,  1.81948543e-01, -2.37634289e-03,
+         8.37158740e-01,  4.93796289e-01, -1.18363738e+00,
+         1.48025799e+00],
+       [-9.25419509e-01, -6.11024022e-01, -5.44200778e-01,
+         6.15053296e-01,  1.59328714e-01,  1.70817602e+00,
+         9.13203180e-01,  4.41116691e-01,  9.60585415e-01,
+        -7.70941377e-01],
+       [ 6.16204619e-01,  1.76796961e+00,  6.64484560e-01,
+         4.84499425e-01,  3.97211730e-01, -4.05721307e-01,
+         1.62465191e+00,  4.17117357e-01,  1.25868547e+00,
+        -1.32999885e+00],
+       [ 9.15076137e-01, -1.04353690e+00, -7.38588035e-01,
+         8.99993181e-02, -2.81167418e-01,  4.81772572e-01,
+        -1.75915432e+00, -1.98559797e+00,  1.11197436e+00,
+         9.65628922e-01],
+       [ 7.57708028e-02, -2.68677413e-01,  1.26832187e+00,
+        -2.68685722e+00, -1.74050176e+00,  1.60435426e+00,
+         5.32472730e-01,  1.06856465e-01,  9.51180875e-01,
+        -1.62606373e-01],
+       [ 2.89488077e-01,  1.03319371e+00, -8.17589015e-02,
+         4.88979220e-01,  9.42635775e-01, -9.74508286e-01,
+         2.06014562e+00, -6.92315102e-01, -6.09754086e-01,
+        -4.18749601e-01]], dtype=float32)&gt;
+</code></pre><h2 id="exponential-family"><a name="exponential-family" class="anchor-navigation-ex-anchor" href="#exponential-family"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. Exponential Family</h2>
+<p>:label:<code>subsec_exponential_family</code></p>
+<p>One shared property for all the distributions listed above is that they all 
+belong to which is known as the <em>exponential family</em>. The exponential family 
+is a set of distributions whose density can be expressed in the following 
+form:</p>
+<p><script type="math/tex; ">p(\mathbf{x} | \mathbf{\eta}) = h(\mathbf{x}) \cdot \mathrm{exp} \big{(} \eta^{\top} \cdot T\mathbf(x) - A(\mathbf{\eta}) \big{)}</script>
+:eqlabel:<code>eq_exp_pdf</code></p>
+<p>As this definition can be a little subtle, let us examine it closely.  </p>
+<p>First, <script type="math/tex; ">h(\mathbf{x})</script> is known as the <em>underlying measure</em> or the 
+<em>base measure</em>.  This can be viewed as an original choice of measure we are 
+modifying with our exponential weight.  </p>
+<p>Second, we have the vector <script type="math/tex; ">\mathbf{\eta} = (\eta_1, \eta_2, ..., \eta_l) \in 
+\mathbb{R}^l</script> called the <em>natural parameters</em> or <em>canonical parameters</em>.  These
+define how the base measure will be modified.  The natural parameters enter 
+into the new measure by taking the dot product of these parameters against 
+some function <script type="math/tex; ">T(\cdot)</script> of <script type="math/tex; ">\mathbf{x}= (x_1, x_2, ..., x_n) \in 
+\mathbb{R}^n</script> and exponentiated. <script type="math/tex; ">T(\mathbf{x})= (T_1(\mathbf{x}), 
+T_2(\mathbf{x}), ..., T_l(\mathbf{x}))</script> 
+is called the <em>sufficient statistics</em> for $\eta$. This name is used since the 
+information represented by <script type="math/tex; ">T(\mathbf{x})</script> is sufficient to calculate the 
+probability density and no other information from the sample $\mathbf{x}$&apos;s 
+are required.</p>
+<p>Third, we have $A(\mathbf{\eta})$, which is referred to as the <em>cumulant 
+function</em>, which ensures that the above distribution :eqref:<code>eq_exp_pdf</code> 
+integrates to one, i.e.,</p>
+<p><script type="math/tex; ">  A(\mathbf{\eta}) = \log \left[\int h(\mathbf{x}) \cdot \mathrm{exp} 
+\big{(}\eta^{\top} \cdot T\mathbf(x) \big{)} dx \right].</script></p>
+<p>To be concrete, let us consider the Gaussian. Assuming that $\mathbf{x}$ is 
+an univariate variable, we saw that it had a density of</p>
+<p><script type="math/tex; mode=display">
+\begin{aligned}
+p(x | \mu, \sigma) &= \frac{1}{\sqrt{2 \pi \sigma^2}} \mathrm{exp} 
+\Big{\{} \frac{-(x-\mu)^2}{2 \sigma^2} \Big{\}} \\
+&= \frac{1}{\sqrt{2 \pi}} \cdot \mathrm{exp} \Big{\{} \frac{\mu}{\sigma^2}x 
+- \frac{1}{2 \sigma^2} x^2 - \big{(} \frac{1}{2 \sigma^2} \mu^2 
++ \log(\sigma) \big{)} \Big{\}} .
+\end{aligned}
+</script></p>
+<p>This matches the definition of the exponential family with:</p>
+<ul>
+<li><em>underlying measure</em>: <script type="math/tex; ">h(x) = \frac{1}{\sqrt{2 \pi}}</script>,</li>
+<li><em>natural parameters</em>: <script type="math/tex; ">\eta = \begin{bmatrix} \eta_1 \\ \eta_2 
+\end{bmatrix} = \begin{bmatrix} \frac{\mu}{\sigma^2} \\ 
+\frac{1}{2 \sigma^2}  \end{bmatrix}</script>,</li>
+<li><em>sufficient statistics</em>: <script type="math/tex; ">T(x) = \begin{bmatrix}x\\-x^2\end{bmatrix}</script>, and</li>
+<li><em>cumulant function</em>: <script type="math/tex; ">A(\eta) = \frac{1}{2 \sigma^2} \mu^2 + \log(\sigma)  
+= \frac{\eta_1^2}{4 \eta_2} - \frac{1}{2}\log(2 \eta_2)</script>.</li>
+</ul>
+<p>It is worth noting that the exact choice of each of above terms is somewhat 
+arbitrary.  Indeed, the important feature is that the distribution can be 
+expressed in this form, not the exact form itself.</p>
+<p>As we allude to in :numref:<code>subsec_softmax_and_derivatives</code>, a widely used 
+technique is to assume that the  final output $\mathbf{y}$ follows an 
+exponential family distribution. The exponential family is a common and 
+powerful family of distributions encountered frequently in machine learning.</p>
+<h2 id="summary"><a name="summary" class="anchor-navigation-ex-anchor" href="#summary"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. Summary</h2>
+<ul>
+<li>Bernoulli random variables can be used to model events with a yes/no outcome.</li>
+<li>Discrete uniform distributions model selects from a finite set of possibilities.</li>
+<li>Continuous uniform distributions select from an interval.</li>
+<li>Binomial distributions model a series of Bernoulli random variables, and count the number of successes.</li>
+<li>Poisson random variables model the arrival of rare events.</li>
+<li>Gaussian random variables model the result of adding a large number of independent random variables together.</li>
+<li>All the above distributions belong to exponential family.</li>
+</ul>
+<h2 id="exercises"><a name="exercises" class="anchor-navigation-ex-anchor" href="#exercises"><i class="fa fa-link" aria-hidden="true"></i></a>1.9. Exercises</h2>
+<ol>
+<li>What is the standard deviation of a random variable that is the difference <script type="math/tex; ">X-Y</script> of two independent binomial random variables <script type="math/tex; ">X, Y \sim \mathrm{Binomial}(16, 1/2)</script>.</li>
+<li>If we take a Poisson random variable <script type="math/tex; ">X \sim \mathrm{Poisson}(\lambda)</script> and consider <script type="math/tex; ">(X - \lambda)/\sqrt{\lambda}</script> as <script type="math/tex; ">\lambda \rightarrow \infty</script>, we can show that this becomes approximately Gaussian.  Why does this make sense?</li>
+<li>What is the probability mass function for a sum of two discrete uniform random variables on <script type="math/tex; ">n</script> elements?</li>
+</ol>
+<p><a href="https://discuss.d2l.ai/t/1099" target="_blank">Discussions</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../第2章/2.1. Maximum_likelihood.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 2.1. 最大似然">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第3章 同化测试","level":"1.6","depth":1,"previous":{"title":"2.1. 最大似然","level":"1.5.1","depth":2,"path":"第2章/2.1. Maximum_likelihood.md","ref":"第2章/2.1. Maximum_likelihood.md","articles":[]},"dir":"ltr"},"config":{"plugins":["collapsible-menu","anchor-navigation-ex","disqus","code","expandable-chapters","back-to-top-button","-lunr","-search","search-pro","mathjax-pro","katex","splitter","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy ershouche-FE 2021","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"collapsible-menu":{},"livereload":{},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"back-to-top-button":{},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"gitbook","gitbook":"*"},"file":{"path":"第3章/Chapter_Three.md","mtime":"2021-03-04T01:41:06.051Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-04T01:58:23.803Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax-pro/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
